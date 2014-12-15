@@ -1,0 +1,12 @@
+/* TEAM */
+    Name: Daniel Li
+    Role: Web Designer, UI Developer, Web Developer, Server Administrator
+    Twitter: @d4nyll
+    Website: danyll.com
+    From: Hong Kong, Hong Kong    
+
+/* SITE */
+    Platform: Meteor
+	Language: English
+	Doctype: HTML5
+	IDE: Sublime Text

@@ -1,0 +1,303 @@
+@import "compass/reset";
+@import "compass/css3/font-face";
+
+@mixin set-color($color) {
+    color: $color;
+    background-color: $color;
+}
+
+@mixin circle($width) {
+    width: $width;
+    height: $width;
+    -webkit-border-radius: $width / 2;
+    -moz-border-radius: $width / 2;
+    border-radius: $width / 2;
+}
+
+@include font-face("Ubuntu Mono", font-files("UbuntuMono-R.ttf"));
+
+$default-font: "Ubuntu Mono";
+$code-font: "Ubuntu Mono";
+
+$default-font-size: 14px;
+$list-title-font-size: 18px;
+
+$break-mobport: 320px;
+$break-mobland: 480px;
+$break-tablet: 768px;
+$break-desktop: 1024px;
+$break-hires: 1366px;
+
+$iconsize: 24px;
+
+$colorscheme: (red: #f28374, yellow: #ffde64, green: #8ad19d, blue: #80adbd, light-grey: #f0f0f0, dark-grey: #333333);
+
+$banner-height: 48px;
+
+$topmargin: 30px;
+$bottommargin: 30px;
+
+$questionheight: 100px;
+$questiongap: 8px;
+$asidecirclesize: 18px;
+
+$questionquestionheight: 45%;
+$questionanswerheight: 100% - $questionquestionheight;
+$indentwidth: 60px;
+$versionwidth: 60px;
+$versionheight: 20px;
+$versionpadding: 20px;
+$questioninnerpadding: 8px;
+$linestodisplay: 2;
+
+@media screen and (max-width: $break-mobland - 1) and (min-width: $break-mobport) {
+    .centerer {
+        width: $break-mobport;
+    }
+}
+
+@media screen and (max-width: $break-tablet - 1) and (min-width: $break-mobland) {
+    .centerer {
+        width: $break-mobland;
+    }
+}
+
+@media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+    .centerer {
+        width: $break-tablet;
+    }
+}
+
+@media screen and (max-width: $break-hires - 1) and (min-width: $break-desktop) {
+    .centerer {
+        width: $break-desktop;
+    }
+}
+
+@media screen and (min-width: $break-hires) {
+    .centerer {
+        width: $break-hires;
+    }
+}
+
+@each $color, $hex in $colorscheme {
+    .#{$color} {
+        @include set-color($hex);
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+}
+
+.centerer {
+    display: inline-block;
+}
+
+body {
+    font-family: $default-font;
+    font-size: $default-font-size;
+    text-align: center;
+}
+
+body > * {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colorscheme, dark-grey);
+}
+
+.menuiconimg {
+    max-height: $iconsize;
+    max-width: $iconsize;
+}
+
+.menu {
+    width: 100%;
+    height: $banner-height;
+    text-align: center;
+    background-color: map-get($colorscheme, light-grey);
+    .menuitem {
+        padding-left: $iconsize / 2;
+        padding-right: $iconsize / 2;
+        display: inline-block;
+    }
+    .menuicon {
+        @extend .menuitem;
+        height: $iconsize;
+        width: $iconsize;
+    }
+}
+
+.menuleft {
+    text-align: left;
+    float: left;
+}
+
+.menuright {
+    text-align: right;
+    float: right;
+}
+
+.banner.menu {
+    font-size: 0;
+    .halfmenu {
+        display: inline-block;
+        width: 50%;
+    }
+    .menuleft {
+        display: inline-block;
+        width: 60%;
+    }
+    .menuright {
+        display: inline-block;
+        width: 40%;
+        #bannersearch {
+            width: $banner-height * 3.75;
+            height: $banner-height / 2;
+            border: none;
+        }
+    }
+    .menuitem {
+        height: $iconsize;
+        padding-top: $banner-height / 4;
+        padding-bottom: $banner-height / 4;
+        input {
+            vertical-align: bottom;
+        }
+    }
+}
+
+.centerer.main {
+    margin-top: $topmargin;
+    margin-bottom: $bottommargin;
+    padding-left: $iconsize / 2;
+}
+
+footer {
+    .menu {
+        font-size: $default-font-size;
+        .footermenu {
+            display: inline-block;
+        }
+        .textmenu {
+            @extend .footermenu;
+            a {
+                padding-top: ($banner-height - $default-font-size) / 2;
+                padding-bottom: ($banner-height - $default-font-size) / 2;
+                display: block;
+            }
+        }
+        .menuleft {
+            @extend .textmenu;
+            width: 45%;
+        }
+        .logo {
+            @extend .footermenu;
+            padding-top: $banner-height / 4;
+            padding-bottom: $banner-height / 4;
+            width: 5%;
+        }
+        .menuright {
+            @extend .textmenu;
+            width: 45%;
+        }
+    }
+}
+
+.aside {
+    width: 30%;
+    float: right;
+    display: inline-block;
+    .legend {
+        padding-left: $asidecirclesize;
+        padding-top: $questionheight / 2;
+        li {
+            line-height: $asidecirclesize;
+            margin: $asidecirclesize / 2 0;
+            .asidecircle {
+                @include circle($asidecirclesize);
+                display: inline-block;
+                margin-right: $asidecirclesize / 2;
+            }
+            .asidetext {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.questionlist {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    .questionlistitem {
+        border-color: map-get($colorscheme, light-grey);
+        &.outdated {
+            border-color: map-get($colorscheme, red);
+        }
+        &.edited {
+            border-color: map-get($colorscheme, yellow);
+        }
+        &.new {
+            border-color: map-get($colorscheme, green);
+        }
+        border-width: 3px;
+        border-style: solid;
+        height: $questionheight - $questiongap;
+        margin-bottom: $questiongap;
+        .indent {
+            text-align: center;
+            width: $indentwidth;
+        }
+        .questionanswer {
+            & > * {
+                display: inline-block;
+                height: 100%;
+                vertical-align: top;
+                padding-top: $questioninnerpadding;
+            }
+        }
+        .question {
+            @extend .questionanswer;
+            height: $questionquestionheight;
+            .questiontext {
+                font-size: $list-title-font-size;
+                font-weight: 700;
+                width: calc(100% - #{$indentwidth});
+            }
+        }
+        .answersnippet {
+            @extend .questionanswer;
+            height: $questionanswerheight;
+            .version {
+            	width: $versionwidth;
+            	height: $versionheight;
+            	background-color: map-get($colorscheme, blue);
+            	padding: 0;
+            	margin-top: $questioninnerpadding;
+            	text-align: center;
+            	line-height: $versionheight;
+            	color: map-get($colorscheme, light-grey);
+            	font-weight: 700;
+            }
+            .answertext {
+            	float: right;
+                display: inline-block;
+                width: calc(100% - #{$indentwidth} - #{$versionwidth} - #{$versionpadding});
+                max-height: $default-font-size * $linestodisplay;
+                overflow: hidden;
+            }
+        }
+    }
+}
