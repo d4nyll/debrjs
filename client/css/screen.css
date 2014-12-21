@@ -230,71 +230,72 @@ a {
   width: 180px;
   height: 24px;
   border: none;
+  margin-right: 24px;
 }
-/* line 170, ../../tests/sass/screen.scss */
+/* line 171, ../../tests/sass/screen.scss */
 .banner.menu .menuitem, .banner.menu .menuicon {
   height: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-/* line 174, ../../tests/sass/screen.scss */
+/* line 175, ../../tests/sass/screen.scss */
 .banner.menu .menuitem input, .banner.menu .menuicon input {
   vertical-align: bottom;
 }
 
-/* line 180, ../../tests/sass/screen.scss */
+/* line 181, ../../tests/sass/screen.scss */
 .centerer.main {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 12px;
 }
 
-/* line 187, ../../tests/sass/screen.scss */
+/* line 188, ../../tests/sass/screen.scss */
 footer .menu {
   font-size: 14px;
 }
-/* line 189, ../../tests/sass/screen.scss */
+/* line 190, ../../tests/sass/screen.scss */
 footer .menu .footermenu, footer .menu .textmenu, footer .menu .menuleft, footer .menu .menuright, footer .menu .logo {
   display: inline-block;
 }
-/* line 194, ../../tests/sass/screen.scss */
+/* line 195, ../../tests/sass/screen.scss */
 footer .menu .textmenu a, footer .menu .menuleft a, footer .menu .menuright a {
   padding-top: 17px;
   padding-bottom: 17px;
   display: block;
 }
-/* line 200, ../../tests/sass/screen.scss */
+/* line 201, ../../tests/sass/screen.scss */
 footer .menu .menuleft {
   width: 45%;
 }
-/* line 204, ../../tests/sass/screen.scss */
+/* line 205, ../../tests/sass/screen.scss */
 footer .menu .logo {
   padding-top: 12px;
   padding-bottom: 12px;
   width: 5%;
 }
-/* line 210, ../../tests/sass/screen.scss */
+/* line 211, ../../tests/sass/screen.scss */
 footer .menu .menuright {
   width: 45%;
 }
 
-/* line 217, ../../tests/sass/screen.scss */
+/* line 218, ../../tests/sass/screen.scss */
 .aside {
   width: 30%;
   float: right;
   display: inline-block;
 }
-/* line 221, ../../tests/sass/screen.scss */
+/* line 222, ../../tests/sass/screen.scss */
 .aside .legend {
   padding-left: 18px;
   padding-top: 50px;
 }
-/* line 224, ../../tests/sass/screen.scss */
+/* line 225, ../../tests/sass/screen.scss */
 .aside .legend li {
   line-height: 18px;
   margin: 9px 0;
 }
-/* line 227, ../../tests/sass/screen.scss */
+/* line 228, ../../tests/sass/screen.scss */
 .aside .legend li .asidecircle {
   width: 18px;
   height: 18px;
@@ -304,19 +305,19 @@ footer .menu .menuright {
   display: inline-block;
   margin-right: 9px;
 }
-/* line 232, ../../tests/sass/screen.scss */
+/* line 233, ../../tests/sass/screen.scss */
 .aside .legend li .asidetext {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 240, ../../tests/sass/screen.scss */
+/* line 241, ../../tests/sass/screen.scss */
 .questionlist {
   width: 70%;
   display: inline-block;
   float: left;
 }
-/* line 244, ../../tests/sass/screen.scss */
+/* line 245, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem {
   border-color: #f0f0f0;
   border-width: 3px;
@@ -324,45 +325,45 @@ footer .menu .menuright {
   height: 92px;
   margin-bottom: 8px;
 }
-/* line 246, ../../tests/sass/screen.scss */
+/* line 247, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem.outdated {
   border-color: #f28374;
 }
-/* line 249, ../../tests/sass/screen.scss */
+/* line 250, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem.edited {
   border-color: #ffde64;
 }
-/* line 252, ../../tests/sass/screen.scss */
+/* line 253, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem.new {
   border-color: #8ad19d;
 }
-/* line 259, ../../tests/sass/screen.scss */
+/* line 260, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .indent {
   text-align: center;
   width: 60px;
 }
-/* line 264, ../../tests/sass/screen.scss */
+/* line 265, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .questionanswer > *, .questionlist .questionlistitem .question > *, .questionlist .questionlistitem .answersnippet > * {
   display: inline-block;
   height: 100%;
   vertical-align: top;
   padding-top: 8px;
 }
-/* line 271, ../../tests/sass/screen.scss */
+/* line 272, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .question {
   height: 45%;
 }
-/* line 274, ../../tests/sass/screen.scss */
+/* line 275, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .question .questiontext {
   font-size: 18px;
   font-weight: 700;
   width: calc(100% - 60px);
 }
-/* line 280, ../../tests/sass/screen.scss */
+/* line 281, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .answersnippet {
   height: 55%;
 }
-/* line 283, ../../tests/sass/screen.scss */
+/* line 284, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .answersnippet .version {
   width: 60px;
   height: 20px;
@@ -374,7 +375,7 @@ footer .menu .menuright {
   color: #f0f0f0;
   font-weight: 700;
 }
-/* line 294, ../../tests/sass/screen.scss */
+/* line 295, ../../tests/sass/screen.scss */
 .questionlist .questionlistitem .answersnippet .answertext {
   float: right;
   display: inline-block;
