@@ -6,3 +6,5 @@
 meteor-platform
 autopublish
 insecure
+markdown
+iron:router
