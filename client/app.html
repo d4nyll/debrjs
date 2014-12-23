@@ -1,0 +1,8 @@
+<template name="app">
+	{{> banner}}
+	<div class="centerer main">
+		{{> yield}}
+		{{> yield "aside"}}
+	</div>
+	{{> footer}}
+</template>
