@@ -1,0 +1,45 @@
+///////////
+/* FONTS */
+///////////
+$default-font: "Ubuntu Mono";
+$code-font: "Ubuntu Mono";
+$default-font-size: 14px;
+$list-title-font-size: 18px;
+$main-title-font-size: 24px;
+
+/////////////
+/* COLOURS */
+/////////////
+$colorscheme: (red: #f28374, yellow: #ffde64, green: #8ad19d, blue: #80adbd, light-grey: #f0f0f0, dark-grey: #333333);
+
+/////////////////
+/* BREAKPOINTS */
+/////////////////
+$break-mobport: 320px;
+$break-mobland: 480px;
+$break-tablet: 768px;
+$break-desktop: 1024px;
+$break-hires: 1366px;
+
+////////////////
+/* DIMENSIONS */
+////////////////
+$iconsize: 24px;
+$banner-height: 48px;
+$topmargin: 30px;
+$bottommargin: 30px;
+$questionheight: 100px;
+$questiongap: 8px;
+$asidecirclesize: 18px;
+$questionquestionheight: 45%;
+$questionanswerheight: 100% - $questionquestionheight;
+$indentwidth: 60px;
+$versionwidth: 60px;
+$versionheight: 20px;
+$versionpadding: 20px;
+$questioninnerpadding: 8px;
+
+///////////////////
+/* MISCELLANEOUS */
+///////////////////
+$linestodisplay: 2;

@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "compass/css3/font-face";
+@import "settings";
 
 @mixin set-color($color) {
     color: $color;
@@ -16,39 +17,7 @@
 
 @include font-face("Ubuntu Mono", font-files("UbuntuMono-R.ttf"));
 
-$default-font: "Ubuntu Mono";
-$code-font: "Ubuntu Mono";
 
-$default-font-size: 14px;
-$list-title-font-size: 18px;
-
-$break-mobport: 320px;
-$break-mobland: 480px;
-$break-tablet: 768px;
-$break-desktop: 1024px;
-$break-hires: 1366px;
-
-$iconsize: 24px;
-
-$colorscheme: (red: #f28374, yellow: #ffde64, green: #8ad19d, blue: #80adbd, light-grey: #f0f0f0, dark-grey: #333333);
-
-$banner-height: 48px;
-
-$topmargin: 30px;
-$bottommargin: 30px;
-
-$questionheight: 100px;
-$questiongap: 8px;
-$asidecirclesize: 18px;
-
-$questionquestionheight: 45%;
-$questionanswerheight: 100% - $questionquestionheight;
-$indentwidth: 60px;
-$versionwidth: 60px;
-$versionheight: 20px;
-$versionpadding: 20px;
-$questioninnerpadding: 8px;
-$linestodisplay: 2;
 
 @media screen and (max-width: $break-mobland - 1) and (min-width: $break-mobport) {
     .centerer {
