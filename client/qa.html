@@ -1,0 +1,16 @@
+<template name="qa">
+	<div class="main qa">
+		<div class="question">
+			{{> favoritebuttons}}
+			<h2>How do I change from development mode to production mode?</h2>
+		</div>
+		<div class="answer">
+		{{> favoritebuttons}}
+		{{#markdown}}
+#There are two ways
+* Use `meteor build`
+* Use [`meteor-up`](https://github.com/arunoda/meteor-up) package
+		{{/markdown}}
+		</div>
+	</div>
+</template>

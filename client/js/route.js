@@ -8,6 +8,7 @@ Router.route('/', function () {
 	this.render('aside', {to: 'aside'});
 });
 
-Router.route('*', function () {
-	this.render('404');
+Router.route('qa', function () {
+	this.render('qa');
+	this.render('related', {to: 'aside'});
 });
