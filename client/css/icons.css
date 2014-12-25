@@ -1,0 +1,146 @@
+/* FONTS */
+/* COLOURS */
+/* BREAKPOINTS */
+/* DIMENSIONS */
+/* MISCELLANEOUS */
+/* line 16, ../../tests/sass/icons.scss */
+.iconbuttons {
+  background-size: cover;
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.answer {
+  background-image: url("/img/answer.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.ask {
+  background-image: url("/img/ask.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.bookmark {
+  background-image: url("/img/bookmark.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.chat {
+  background-image: url("/img/chat.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.edit {
+  background-image: url("/img/edit.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.like {
+  background-image: url("/img/like.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.logo {
+  background-image: url("/img/logo.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.messages {
+  background-image: url("/img/messages.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.search {
+  background-image: url("/img/search.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.settings {
+  background-image: url("/img/settings.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.user {
+  background-image: url("/img/user.png");
+}
+
+/* line 31, ../../tests/sass/icons.scss */
+.actionbuttons {
+  background-size: cover;
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.answer {
+  background-image: url("/img/answer.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.answer:hover {
+  background-image: url("/img/answer_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.ask {
+  background-image: url("/img/ask.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.ask:hover {
+  background-image: url("/img/ask_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.bookmark {
+  background-image: url("/img/bookmark.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.bookmark:hover {
+  background-image: url("/img/bookmark_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.chat {
+  background-image: url("/img/chat.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.chat:hover {
+  background-image: url("/img/chat_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.edit {
+  background-image: url("/img/edit.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.edit:hover {
+  background-image: url("/img/edit_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.like {
+  background-image: url("/img/like.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.like:hover {
+  background-image: url("/img/like_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.logo {
+  background-image: url("/img/logo.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.logo:hover {
+  background-image: url("/img/logo_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.messages {
+  background-image: url("/img/messages.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.messages:hover {
+  background-image: url("/img/messages_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.search {
+  background-image: url("/img/search.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.search:hover {
+  background-image: url("/img/search_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.settings {
+  background-image: url("/img/settings.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.settings:hover {
+  background-image: url("/img/settings_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.user {
+  background-image: url("/img/user.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.user:hover {
+  background-image: url("/img/user_filled.png");
+}

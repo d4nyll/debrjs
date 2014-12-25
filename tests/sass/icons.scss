@@ -1,0 +1,44 @@
+@import "settings";
+
+@mixin iconbutton($name) {
+    &.#{$name} {
+		background-image: url("/img/#{$name}.png");
+	}
+}
+
+@mixin actionbutton($name) {
+    @include iconbutton($name);
+	&.#{$name}:hover {
+		background-image: url("/img/#{$name}_filled.png");
+	}
+}
+
+.iconbuttons {
+	background-size: cover;
+	@include iconbutton('answer');
+	@include iconbutton('ask');
+	@include iconbutton('bookmark');
+	@include iconbutton('chat');
+	@include iconbutton('edit');
+	@include iconbutton('like');
+	@include iconbutton('logo');
+	@include iconbutton('messages');
+	@include iconbutton('search');
+	@include iconbutton('settings');
+	@include iconbutton('user');
+}
+
+.actionbuttons {
+	background-size: cover;
+	@include actionbutton('answer');
+	@include actionbutton('ask');
+	@include actionbutton('bookmark');
+	@include actionbutton('chat');
+	@include actionbutton('edit');
+	@include actionbutton('like');
+	@include actionbutton('logo');
+	@include actionbutton('messages');
+	@include actionbutton('search');
+	@include actionbutton('settings');
+	@include actionbutton('user');
+}
