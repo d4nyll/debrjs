@@ -1,0 +1,8 @@
+@import "settings";
+
+.favoritebuttons {
+	float: left;
+	width: $iconsize;
+	padding-left: $qaquestionpaddingleft;
+	padding-right: $iconsize;
+}

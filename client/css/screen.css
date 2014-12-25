@@ -72,6 +72,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Ubuntu Mono";
   src: url('../../public/fonts/UbuntuMono-R.ttf?312739200') format('truetype');
 }
+@font-face {
+  font-family: "Quicksand";
+  src: url('../../public/fonts/Quicksand-Regular.otf?312739200') format('opentype');
+}
 @media screen and (max-width: 479px) and (min-width: 320px) {
   /* line 23, ../../tests/sass/screen.scss */
   .centerer {
@@ -164,7 +168,7 @@ html {
 /* line 77, ../../tests/sass/screen.scss */
 body {
   margin: 0 0 48px;
-  font-family: "Ubuntu Mono";
+  font-family: "Quicksand";
   font-size: 14px;
   text-align: center;
 }

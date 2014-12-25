@@ -1,0 +1,23 @@
+@import "settings";
+.qa {
+	& > * {
+		padding: $qapadding;
+	}
+	.question {
+		padding-top: $qaquestionpaddingtop;
+		padding-left: $qaquestionpaddingleft;
+		h2 {
+			font-size: $main-title-font-size;
+			font-weight: 700;
+		}
+	}
+	.answer {
+		padding-top: 0;
+		line-height: $qaanswerlineheight;
+		padding-left: $qaanswerpaddingleft;
+		li {
+			list-style: disc;
+			list-style-position: inside;
+		}
+	}
+}

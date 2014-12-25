@@ -16,7 +16,7 @@
 }
 
 @include font-face("Ubuntu Mono", font-files("UbuntuMono-R.ttf"));
-
+@include font-face("Quicksand", font-files("Quicksand-Regular.otf"));
 
 
 @media screen and (max-width: $break-mobland - 1) and (min-width: $break-mobport) {
@@ -90,11 +90,18 @@ a {
     color: map-get($colorscheme, dark-grey);
 }
 
-.menuiconimg {
-    max-height: $iconsize;
-    max-width: $iconsize;
+code {
+	font-family: $code-font;
 }
-
+.iconbuttons {
+	width: $iconsize;
+	height: $iconsize;
+	display: inline-block;
+}
+.actionbuttons {
+    @extend .iconbuttons;
+    cursor: pointer;
+}
 .menu {
     width: 100%;
     height: $banner-height;
@@ -109,6 +116,7 @@ a {
         @extend .menuitem;
         height: $iconsize;
         width: $iconsize;
+        display: inline-block;
     }
 }
 
@@ -152,7 +160,7 @@ a {
     }
 }
 
-.centerer.main {
+.centerer.body {
     margin-top: $topmargin;
     margin-bottom: $bottommargin;
     padding-left: $iconsize / 2;
@@ -181,7 +189,7 @@ footer {
             @extend .textmenu;
             width: 45%;
         }
-        .logo {
+        .logocont {
             @extend .footermenu;
             padding-top: $banner-height / 4;
             padding-bottom: $banner-height / 4;
@@ -198,86 +206,89 @@ footer {
     width: 30%;
     float: right;
     display: inline-block;
-    .legend {
-        padding-left: $asidecirclesize;
-        padding-top: $questionheight / 2;
-        li {
-            line-height: $asidecirclesize;
-            margin: $asidecirclesize / 2 0;
-            .asidecircle {
-                @include circle($asidecirclesize);
-                display: inline-block;
-                margin-right: $asidecirclesize / 2;
-            }
-            .asidetext {
-                display: inline-block;
-                vertical-align: top;
-            }
+}
+
+.main {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    
+}
+
+.legend {
+    padding-left: $asidecirclesize;
+    padding-top: $questionheight / 2;
+    li {
+        line-height: $asidecirclesize;
+        margin: $asidecirclesize / 2 0;
+        .asidecircle {
+            @include circle($asidecirclesize);
+            display: inline-block;
+            margin-right: $asidecirclesize / 2;
+        }
+        .asidetext {
+            display: inline-block;
+            vertical-align: top;
         }
     }
 }
 
-.questionlist {
-    width: 70%;
-    display: inline-block;
-    float: left;
-    .questionlistitem {
-        border-color: map-get($colorscheme, light-grey);
-        &.outdated {
-            border-color: map-get($colorscheme, red);
+.questionlistitem {
+    border-color: map-get($colorscheme, light-grey);
+    &.outdated {
+        border-color: map-get($colorscheme, red);
+    }
+    &.edited {
+        border-color: map-get($colorscheme, yellow);
+    }
+    &.new {
+        border-color: map-get($colorscheme, green);
+    }
+    border-width: 3px;
+    border-style: solid;
+    height: $questionheight - $questiongap;
+    margin-bottom: $questiongap;
+    .indent {
+        text-align: center;
+        width: $indentwidth;
+    }
+    .questionanswer {
+        & > * {
+            display: inline-block;
+            height: 100%;
+            vertical-align: top;
+            padding-top: $questioninnerpadding;
         }
-        &.edited {
-            border-color: map-get($colorscheme, yellow);
+    }
+    .question {
+        @extend .questionanswer;
+        height: $questionquestionheight;
+        .questiontext {
+            font-size: $list-title-font-size;
+            font-weight: 700;
+            width: calc(100% - #{$indentwidth});
         }
-        &.new {
-            border-color: map-get($colorscheme, green);
+    }
+    .answersnippet {
+        @extend .questionanswer;
+        height: $questionanswerheight;
+        .version {
+        	width: $versionwidth;
+        	height: $versionheight;
+        	background-color: map-get($colorscheme, blue);
+        	padding: 0;
+        	margin-top: $questioninnerpadding;
+        	text-align: center;
+        	line-height: $versionheight;
+        	color: map-get($colorscheme, light-grey);
+        	font-weight: 700;
         }
-        border-width: 3px;
-        border-style: solid;
-        height: $questionheight - $questiongap;
-        margin-bottom: $questiongap;
-        .indent {
-            text-align: center;
-            width: $indentwidth;
-        }
-        .questionanswer {
-            & > * {
-                display: inline-block;
-                height: 100%;
-                vertical-align: top;
-                padding-top: $questioninnerpadding;
-            }
-        }
-        .question {
-            @extend .questionanswer;
-            height: $questionquestionheight;
-            .questiontext {
-                font-size: $list-title-font-size;
-                font-weight: 700;
-                width: calc(100% - #{$indentwidth});
-            }
-        }
-        .answersnippet {
-            @extend .questionanswer;
-            height: $questionanswerheight;
-            .version {
-            	width: $versionwidth;
-            	height: $versionheight;
-            	background-color: map-get($colorscheme, blue);
-            	padding: 0;
-            	margin-top: $questioninnerpadding;
-            	text-align: center;
-            	line-height: $versionheight;
-            	color: map-get($colorscheme, light-grey);
-            	font-weight: 700;
-            }
-            .answertext {
-            	float: right;
-                display: inline-block;
-                width: calc(100% - #{$indentwidth} - #{$versionwidth} - #{$versionpadding});
-                max-height: $default-font-size * $linestodisplay;
-                overflow: hidden;
-            }
+        .answertext {
+        	float: right;
+            display: inline-block;
+            width: calc(100% - #{$indentwidth} - #{$versionwidth} - #{$versionpadding});
+            max-height: $default-font-size * $linestodisplay;
+            overflow: hidden;
         }
     }
 }

@@ -1,7 +1,7 @@
 ///////////
 /* FONTS */
 ///////////
-$default-font: "Ubuntu Mono";
+$default-font: "Quicksand";
 $code-font: "Ubuntu Mono";
 $default-font-size: 14px;
 $list-title-font-size: 18px;
@@ -38,6 +38,12 @@ $versionwidth: 60px;
 $versionheight: 20px;
 $versionpadding: 20px;
 $questioninnerpadding: 8px;
+
+$qapadding: 35px;
+$qaquestionpaddingtop: $qapadding - $topmargin;
+$qaquestionpaddingleft: $qaquestionpaddingtop;
+$qaanswerpaddingleft: $qaquestionpaddingleft + 12px;
+$qaanswerlineheight: 18px;
 
 ///////////////////
 /* MISCELLANEOUS */
