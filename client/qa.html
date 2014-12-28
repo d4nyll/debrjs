@@ -2,15 +2,40 @@
 	<div class="main qa">
 		<div class="question">
 			{{> favoritebuttons}}
-			<h2>How do I change from development mode to production mode?</h2>
+			<h2>#{{qid}}: {{questiontext}}</h2>
 		</div>
 		<div class="answer">
-		{{> favoritebuttons}}
-		{{#markdown}}
-#There are two ways
-* Use `meteor build`
-* Use [`meteor-up`](https://github.com/arunoda/meteor-up) package
-		{{/markdown}}
+			{{> favoritebuttons}}
+			<div class="answerbox">
+				{{> Template.dynamic template=answeredit}}
+			</div>
 		</div>
+	</div>
+</template>
+
+<template name="answer">
+	<div class="answertext">
+		{{#markdown}}
+{{answertext}}
+		{{/markdown}}
+	</div>
+	<div class="editbutton">
+		<a href="edit/">
+			<div class="edit actionbuttons"></div>
+		</a>
+	</div>
+</template>
+
+<template name="edit">
+	<div class="editbox">
+		<textarea id="epictext" name="epictext">
+{{answertext}}
+		</textarea>
+		<div id="epiceditor"></div>
+	</div>
+	<div class="editbutton">
+		<a href="../">
+			<div class="save actionbuttons"></div>
+		</a>
 	</div>
 </template>
