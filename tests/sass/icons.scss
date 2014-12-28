@@ -23,6 +23,7 @@
 	@include iconbutton('like');
 	@include iconbutton('logo');
 	@include iconbutton('messages');
+	@include iconbutton('save');
 	@include iconbutton('search');
 	@include iconbutton('settings');
 	@include iconbutton('user');
@@ -38,6 +39,7 @@
 	@include actionbutton('like');
 	@include actionbutton('logo');
 	@include actionbutton('messages');
+	@include actionbutton('save');
 	@include actionbutton('search');
 	@include actionbutton('settings');
 	@include actionbutton('user');

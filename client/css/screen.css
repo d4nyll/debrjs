@@ -142,6 +142,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #333333;
 }
 
+/* line 53, ../../tests/sass/screen.scss */
+.white {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
 /* line 58, ../../tests/sass/screen.scss */
 html, body {
   margin: 0;
@@ -171,113 +177,115 @@ body {
   font-family: "Quicksand";
   font-size: 14px;
   text-align: center;
+  background-color: #ffffff;
+  color: #333333;
 }
 
-/* line 84, ../../tests/sass/screen.scss */
+/* line 86, ../../tests/sass/screen.scss */
 body > * {
   text-align: left;
 }
 
-/* line 88, ../../tests/sass/screen.scss */
+/* line 90, ../../tests/sass/screen.scss */
 a {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 93, ../../tests/sass/screen.scss */
+/* line 95, ../../tests/sass/screen.scss */
 code {
   font-family: "Ubuntu Mono";
 }
 
-/* line 96, ../../tests/sass/screen.scss */
+/* line 98, ../../tests/sass/screen.scss */
 .iconbuttons, .actionbuttons {
   width: 24px;
   height: 24px;
   display: inline-block;
 }
 
-/* line 101, ../../tests/sass/screen.scss */
+/* line 103, ../../tests/sass/screen.scss */
 .actionbuttons {
   cursor: pointer;
 }
 
-/* line 105, ../../tests/sass/screen.scss */
+/* line 107, ../../tests/sass/screen.scss */
 .menu {
   width: 100%;
   height: 48px;
   text-align: center;
   background-color: #f0f0f0;
 }
-/* line 110, ../../tests/sass/screen.scss */
+/* line 112, ../../tests/sass/screen.scss */
 .menu .menuitem, .menu .menuicon {
   padding-left: 12px;
   padding-right: 12px;
   display: inline-block;
 }
-/* line 115, ../../tests/sass/screen.scss */
+/* line 117, ../../tests/sass/screen.scss */
 .menu .menuicon {
   height: 24px;
   width: 24px;
   display: inline-block;
 }
 
-/* line 123, ../../tests/sass/screen.scss */
+/* line 125, ../../tests/sass/screen.scss */
 .menuleft {
   text-align: left;
   float: left;
 }
 
-/* line 128, ../../tests/sass/screen.scss */
+/* line 130, ../../tests/sass/screen.scss */
 .menuright {
   text-align: right;
   float: right;
 }
 
-/* line 133, ../../tests/sass/screen.scss */
+/* line 135, ../../tests/sass/screen.scss */
 .banner.menu {
   font-size: 0;
 }
-/* line 135, ../../tests/sass/screen.scss */
+/* line 137, ../../tests/sass/screen.scss */
 .banner.menu .halfmenu {
   display: inline-block;
   width: 50%;
 }
-/* line 139, ../../tests/sass/screen.scss */
+/* line 141, ../../tests/sass/screen.scss */
 .banner.menu .menuleft {
   display: inline-block;
   width: 60%;
 }
-/* line 143, ../../tests/sass/screen.scss */
+/* line 145, ../../tests/sass/screen.scss */
 .banner.menu .menuright {
   display: inline-block;
   width: 40%;
 }
-/* line 146, ../../tests/sass/screen.scss */
+/* line 148, ../../tests/sass/screen.scss */
 .banner.menu .menuright #bannersearch {
   width: 180px;
   height: 24px;
   border: none;
   margin-right: 24px;
 }
-/* line 153, ../../tests/sass/screen.scss */
+/* line 155, ../../tests/sass/screen.scss */
 .banner.menu .menuitem, .banner.menu .menuicon {
   height: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-/* line 157, ../../tests/sass/screen.scss */
+/* line 159, ../../tests/sass/screen.scss */
 .banner.menu .menuitem input, .banner.menu .menuicon input {
   vertical-align: bottom;
 }
 
-/* line 163, ../../tests/sass/screen.scss */
+/* line 165, ../../tests/sass/screen.scss */
 .centerer.body {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 12px;
 }
 
-/* line 169, ../../tests/sass/screen.scss */
+/* line 171, ../../tests/sass/screen.scss */
 footer {
   position: absolute;
   left: 0;
@@ -285,60 +293,60 @@ footer {
   height: 48px;
   width: 100%;
 }
-/* line 175, ../../tests/sass/screen.scss */
+/* line 177, ../../tests/sass/screen.scss */
 footer .menu {
   font-size: 14px;
 }
-/* line 177, ../../tests/sass/screen.scss */
+/* line 179, ../../tests/sass/screen.scss */
 footer .menu .footermenu, footer .menu .textmenu, footer .menu .menuleft, footer .menu .menuright, footer .menu .logocont {
   display: inline-block;
 }
-/* line 182, ../../tests/sass/screen.scss */
+/* line 184, ../../tests/sass/screen.scss */
 footer .menu .textmenu a, footer .menu .menuleft a, footer .menu .menuright a {
   padding-top: 17px;
   padding-bottom: 17px;
   display: block;
 }
-/* line 188, ../../tests/sass/screen.scss */
+/* line 190, ../../tests/sass/screen.scss */
 footer .menu .menuleft {
   width: 45%;
 }
-/* line 192, ../../tests/sass/screen.scss */
+/* line 194, ../../tests/sass/screen.scss */
 footer .menu .logocont {
   padding-top: 12px;
   padding-bottom: 12px;
   width: 5%;
 }
-/* line 198, ../../tests/sass/screen.scss */
+/* line 200, ../../tests/sass/screen.scss */
 footer .menu .menuright {
   width: 45%;
 }
 
-/* line 205, ../../tests/sass/screen.scss */
+/* line 207, ../../tests/sass/screen.scss */
 .aside {
   width: 30%;
   float: right;
   display: inline-block;
 }
 
-/* line 211, ../../tests/sass/screen.scss */
+/* line 213, ../../tests/sass/screen.scss */
 .main {
   width: 70%;
   display: inline-block;
   float: left;
 }
 
-/* line 218, ../../tests/sass/screen.scss */
+/* line 220, ../../tests/sass/screen.scss */
 .legend {
   padding-left: 18px;
   padding-top: 50px;
 }
-/* line 221, ../../tests/sass/screen.scss */
+/* line 223, ../../tests/sass/screen.scss */
 .legend li {
   line-height: 18px;
   margin: 9px 0;
 }
-/* line 224, ../../tests/sass/screen.scss */
+/* line 226, ../../tests/sass/screen.scss */
 .legend li .asidecircle {
   width: 18px;
   height: 18px;
@@ -348,13 +356,13 @@ footer .menu .menuright {
   display: inline-block;
   margin-right: 9px;
 }
-/* line 229, ../../tests/sass/screen.scss */
+/* line 231, ../../tests/sass/screen.scss */
 .legend li .asidetext {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 236, ../../tests/sass/screen.scss */
+/* line 238, ../../tests/sass/screen.scss */
 .questionlistitem {
   border-color: #f0f0f0;
   border-width: 3px;
@@ -362,45 +370,45 @@ footer .menu .menuright {
   height: 92px;
   margin-bottom: 8px;
 }
-/* line 238, ../../tests/sass/screen.scss */
+/* line 240, ../../tests/sass/screen.scss */
 .questionlistitem.outdated {
   border-color: #f28374;
 }
-/* line 241, ../../tests/sass/screen.scss */
+/* line 243, ../../tests/sass/screen.scss */
 .questionlistitem.edited {
   border-color: #ffde64;
 }
-/* line 244, ../../tests/sass/screen.scss */
+/* line 246, ../../tests/sass/screen.scss */
 .questionlistitem.new {
   border-color: #8ad19d;
 }
-/* line 251, ../../tests/sass/screen.scss */
+/* line 253, ../../tests/sass/screen.scss */
 .questionlistitem .indent {
   text-align: center;
   width: 60px;
 }
-/* line 256, ../../tests/sass/screen.scss */
+/* line 258, ../../tests/sass/screen.scss */
 .questionlistitem .questionanswer > *, .questionlistitem .question > *, .questionlistitem .answersnippet > * {
   display: inline-block;
   height: 100%;
   vertical-align: top;
   padding-top: 8px;
 }
-/* line 263, ../../tests/sass/screen.scss */
+/* line 265, ../../tests/sass/screen.scss */
 .questionlistitem .question {
   height: 45%;
 }
-/* line 266, ../../tests/sass/screen.scss */
+/* line 268, ../../tests/sass/screen.scss */
 .questionlistitem .question .questiontext {
   font-size: 18px;
   font-weight: 700;
   width: calc(100% - 60px);
 }
-/* line 272, ../../tests/sass/screen.scss */
+/* line 274, ../../tests/sass/screen.scss */
 .questionlistitem .answersnippet {
   height: 55%;
 }
-/* line 275, ../../tests/sass/screen.scss */
+/* line 277, ../../tests/sass/screen.scss */
 .questionlistitem .answersnippet .version {
   width: 60px;
   height: 20px;
@@ -412,11 +420,64 @@ footer .menu .menuright {
   color: #f0f0f0;
   font-weight: 700;
 }
-/* line 286, ../../tests/sass/screen.scss */
+/* line 288, ../../tests/sass/screen.scss */
 .questionlistitem .answersnippet .answertext {
   float: right;
   display: inline-block;
   width: calc(100% - 60px - 60px - 20px);
   max-height: 28px;
   overflow: hidden;
+}
+
+/* line 299, ../../tests/sass/screen.scss */
+.qa > * {
+  padding: 35px;
+}
+/* line 302, ../../tests/sass/screen.scss */
+.qa .question {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+/* line 305, ../../tests/sass/screen.scss */
+.qa .question h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+/* line 310, ../../tests/sass/screen.scss */
+.qa .answer {
+  padding-top: 0;
+  line-height: 18px;
+  padding-left: 17px;
+}
+/* line 314, ../../tests/sass/screen.scss */
+.qa .answer li {
+  list-style: disc;
+  list-style-position: inside;
+}
+/* line 318, ../../tests/sass/screen.scss */
+.qa .answer .answerbox {
+  position: relative;
+}
+/* line 320, ../../tests/sass/screen.scss */
+.qa .answer .answerbox .editbutton {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 325, ../../tests/sass/screen.scss */
+.qa .answer .answerbox #epictext {
+  display: none;
+}
+/* line 328, ../../tests/sass/screen.scss */
+.qa .answer .answerbox .editbox {
+  width: calc(100% - (4 * 24px));
+  display: inline-block;
+}
+
+/* line 336, ../../tests/sass/screen.scss */
+.favoritebuttons {
+  float: left;
+  width: 24px;
+  padding-left: 5px;
+  padding-right: 24px;
 }

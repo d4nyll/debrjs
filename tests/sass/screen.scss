@@ -50,7 +50,7 @@
 }
 
 @each $color, $hex in $colorscheme {
-    .#{$color} {
+    .#{"" + $color} {
         @include set-color($hex);
     }
 }
@@ -79,6 +79,8 @@ body {
     font-family: $default-font;
     font-size: $default-font-size;
     text-align: center;
+    background-color: map-get($colorscheme, white);
+    color: map-get($colorscheme, dark-grey);
 }
 
 body > * {
@@ -291,4 +293,49 @@ footer {
             overflow: hidden;
         }
     }
+}
+
+.qa {
+    & > * {
+        padding: $qapadding;
+    }
+    .question {
+        padding-top: $qaquestionpaddingtop;
+        padding-left: $qaquestionpaddingleft;
+        h2 {
+            font-size: $main-title-font-size;
+            font-weight: 700;
+        }
+    }
+    .answer {
+        padding-top: 0;
+        line-height: $qaanswerlineheight;
+        padding-left: $qaanswerpaddingleft;
+        li {
+            list-style: disc;
+            list-style-position: inside;
+        }
+        .answerbox {
+            position: relative;
+            .editbutton {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #epictext {
+                display: none;
+            }
+            .editbox {
+                width: calc(100% - (4 * #{$iconsize}));
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.favoritebuttons {
+    float: left;
+    width: $iconsize;
+    padding-left: $qaquestionpaddingleft;
+    padding-right: $iconsize;
 }

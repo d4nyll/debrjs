@@ -40,6 +40,10 @@
   background-image: url("/img/messages.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
+.iconbuttons.save {
+  background-image: url("/img/save.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
 .iconbuttons.search {
   background-image: url("/img/search.png");
 }
@@ -52,7 +56,7 @@
   background-image: url("/img/user.png");
 }
 
-/* line 31, ../../tests/sass/icons.scss */
+/* line 32, ../../tests/sass/icons.scss */
 .actionbuttons {
   background-size: cover;
 }
@@ -119,6 +123,14 @@
 /* line 11, ../../tests/sass/icons.scss */
 .actionbuttons.messages:hover {
   background-image: url("/img/messages_filled.png");
+}
+/* line 4, ../../tests/sass/icons.scss */
+.actionbuttons.save {
+  background-image: url("/img/save.png");
+}
+/* line 11, ../../tests/sass/icons.scss */
+.actionbuttons.save:hover {
+  background-image: url("/img/save_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
 .actionbuttons.search {
