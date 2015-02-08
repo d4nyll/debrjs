@@ -4,7 +4,13 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 markdown
 iron:router
+accounts-password
+accounts-google
+accounts-facebook
+accounts-twitter
+accounts-github
+accounts-ui
+email
+reactive-var
