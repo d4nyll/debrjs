@@ -31,3 +31,7 @@ Router.route('/qa/:_id/edit/', function () {
 	this.render('related', {to: 'aside'});
 	Session.set('editMode', true);
 });
+
+Router.route('/user/', function () {
+	this.render('user');
+});

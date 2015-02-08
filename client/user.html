@@ -1,0 +1,13 @@
+<template name="user">
+	{{> loginButtons}}
+	{{#if currentUser}}
+		<p>Username: {{username}}</p>
+		<p>Email: {{email}}</p>
+		{{#if verified}}
+			<p>Account is verified!</p>
+		{{else}}
+			<p>Click <a class="verifyEmail">here</a> to verify your email</p>
+		{{/if}}
+		<p>Member since: {{createdAt}}</p>
+	{{/if}}
+</template>

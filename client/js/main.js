@@ -65,3 +65,11 @@ Template.edit.rendered = function () {
 	};
 	editor = new EpicEditor(opts).load();
 };
+
+Template.registerHelper('username', function () {
+	console.log(Meteor.user());
+});
+
+Accounts.ui.config({
+	passwordSignupFields: 'USERNAME_AND_EMAIL'
+});
