@@ -28,10 +28,7 @@
 
 <template name="edit">
 	<div class="editbox">
-		<textarea id="epictext" name="epictext">
-{{answertext}}
-		</textarea>
-		<div id="epiceditor"></div>
+		{{>epic answertext focusOnLoad=true}}
 	</div>
 	<div class="editbutton">
 		<a href="../">
