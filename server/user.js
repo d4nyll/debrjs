@@ -9,3 +9,11 @@ Meteor.methods({
 		}
 	}
 });
+
+Accounts.onCreateUser(function (options, user) {
+	if (options.profile) {
+		user.profile = options.profile;
+	}
+	user.roles = {__global_roles__: []};
+	return user;
+});
