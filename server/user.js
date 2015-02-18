@@ -4,7 +4,8 @@ Meteor.methods({
 		Accounts.sendVerificationEmail(this.userId);
 	},
 	userCreatedAt: function () {
-		console.log(Meteor.user());
-		return Meteor.user().createdAt;
+		if(Meteor.user() !== null && typeof Meteor.user() != 'undefined') {
+			return Meteor.user().createdAt;
+		}
 	}
 });
