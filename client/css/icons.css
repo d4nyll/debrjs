@@ -36,8 +36,8 @@
   background-image: url("/img/logo.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.messages {
-  background-image: url("/img/messages.png");
+.iconbuttons.mail {
+  background-image: url("/img/mail.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
 .iconbuttons.save {
@@ -117,12 +117,12 @@
   background-image: url("/img/logo_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.messages {
-  background-image: url("/img/messages.png");
+.actionbuttons.mail {
+  background-image: url("/img/mail.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.messages:hover {
-  background-image: url("/img/messages_filled.png");
+.actionbuttons.mail:hover {
+  background-image: url("/img/mail_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
 .actionbuttons.save {
