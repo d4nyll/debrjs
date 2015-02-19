@@ -14,6 +14,7 @@ Accounts.onCreateUser(function (options, user) {
 	if (options.profile) {
 		user.profile = options.profile;
 	}
+	user.bookmarks = {questions: [], answers: []};
 	Roles.setRolesOnUserObj(user, ['user'], Roles.GLOBAL_GROUP);
 	// user.roles = {__global_roles__: []};
 	return user;
