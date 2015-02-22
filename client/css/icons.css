@@ -4,155 +4,155 @@
 /* DIMENSIONS */
 /* MISCELLANEOUS */
 /* line 16, ../../tests/sass/icons.scss */
-.iconbuttons {
+.iconButtons {
   background-size: cover;
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.answer {
+.iconButtons.answer {
   background-image: url("/img/answer.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.ask {
+.iconButtons.ask {
   background-image: url("/img/ask.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.bookmark {
+.iconButtons.bookmark {
   background-image: url("/img/bookmark.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.chat {
+.iconButtons.chat {
   background-image: url("/img/chat.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.edit {
+.iconButtons.edit {
   background-image: url("/img/edit.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.like {
+.iconButtons.like {
   background-image: url("/img/like.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.logo {
+.iconButtons.logo {
   background-image: url("/img/logo.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.mail {
+.iconButtons.mail {
   background-image: url("/img/mail.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.save {
+.iconButtons.save {
   background-image: url("/img/save.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.search {
+.iconButtons.search {
   background-image: url("/img/search.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.settings {
+.iconButtons.settings {
   background-image: url("/img/settings.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.iconbuttons.user {
+.iconButtons.user {
   background-image: url("/img/user.png");
 }
 
 /* line 32, ../../tests/sass/icons.scss */
-.actionbuttons {
+.actionButtons {
   background-size: cover;
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.answer {
+.actionButtons.answer {
   background-image: url("/img/answer.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.answer:hover {
+.actionButtons.answer:hover {
   background-image: url("/img/answer_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.ask {
+.actionButtons.ask {
   background-image: url("/img/ask.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.ask:hover {
+.actionButtons.ask:hover {
   background-image: url("/img/ask_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.bookmark {
+.actionButtons.bookmark {
   background-image: url("/img/bookmark.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.bookmark:hover {
+.actionButtons.bookmark:hover {
   background-image: url("/img/bookmark_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.chat {
+.actionButtons.chat {
   background-image: url("/img/chat.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.chat:hover {
+.actionButtons.chat:hover {
   background-image: url("/img/chat_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.edit {
+.actionButtons.edit {
   background-image: url("/img/edit.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.edit:hover {
+.actionButtons.edit:hover {
   background-image: url("/img/edit_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.like {
+.actionButtons.like {
   background-image: url("/img/like.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.like:hover {
+.actionButtons.like:hover {
   background-image: url("/img/like_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.logo {
+.actionButtons.logo {
   background-image: url("/img/logo.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.logo:hover {
+.actionButtons.logo:hover {
   background-image: url("/img/logo_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.mail {
+.actionButtons.mail {
   background-image: url("/img/mail.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.mail:hover {
+.actionButtons.mail:hover {
   background-image: url("/img/mail_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.save {
+.actionButtons.save {
   background-image: url("/img/save.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.save:hover {
+.actionButtons.save:hover {
   background-image: url("/img/save_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.search {
+.actionButtons.search {
   background-image: url("/img/search.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.search:hover {
+.actionButtons.search:hover {
   background-image: url("/img/search_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.settings {
+.actionButtons.settings {
   background-image: url("/img/settings.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.settings:hover {
+.actionButtons.settings:hover {
   background-image: url("/img/settings_filled.png");
 }
 /* line 4, ../../tests/sass/icons.scss */
-.actionbuttons.user {
+.actionButtons.user {
   background-image: url("/img/user.png");
 }
 /* line 11, ../../tests/sass/icons.scss */
-.actionbuttons.user:hover {
+.actionButtons.user:hover {
   background-image: url("/img/user_filled.png");
 }

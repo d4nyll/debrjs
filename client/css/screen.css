@@ -198,14 +198,14 @@ code {
 }
 
 /* line 98, ../../tests/sass/screen.scss */
-.iconbuttons, .actionbuttons {
+.iconButtons, .actionButtons {
   width: 24px;
   height: 24px;
   display: inline-block;
 }
 
 /* line 103, ../../tests/sass/screen.scss */
-.actionbuttons {
+.actionButtons {
   cursor: pointer;
 }
 
@@ -217,26 +217,26 @@ code {
   background-color: #f0f0f0;
 }
 /* line 112, ../../tests/sass/screen.scss */
-.menu .menuitem, .menu .menuicon {
+.menu .menuItem, .menu .menuIcon {
   padding-left: 12px;
   padding-right: 12px;
   display: inline-block;
 }
 /* line 117, ../../tests/sass/screen.scss */
-.menu .menuicon {
+.menu .menuIcon {
   height: 24px;
   width: 24px;
   display: inline-block;
 }
 
 /* line 125, ../../tests/sass/screen.scss */
-.menuleft {
+.menuLeft {
   text-align: left;
   float: left;
 }
 
 /* line 130, ../../tests/sass/screen.scss */
-.menuright {
+.menuRight {
   text-align: right;
   float: right;
 }
@@ -246,35 +246,35 @@ code {
   font-size: 0;
 }
 /* line 137, ../../tests/sass/screen.scss */
-.banner.menu .halfmenu {
+.banner.menu .halfMenu {
   display: inline-block;
   width: 50%;
 }
 /* line 141, ../../tests/sass/screen.scss */
-.banner.menu .menuleft {
+.banner.menu .menuLeft {
   display: inline-block;
   width: 60%;
 }
 /* line 145, ../../tests/sass/screen.scss */
-.banner.menu .menuright {
+.banner.menu .menuRight {
   display: inline-block;
   width: 40%;
 }
 /* line 148, ../../tests/sass/screen.scss */
-.banner.menu .menuright #bannersearch {
+.banner.menu .menuRight #bannerSearch {
   width: 180px;
   height: 24px;
   border: none;
   margin-right: 24px;
 }
 /* line 155, ../../tests/sass/screen.scss */
-.banner.menu .menuitem, .banner.menu .menuicon {
+.banner.menu .menuItem, .banner.menu .menuIcon {
   height: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 /* line 159, ../../tests/sass/screen.scss */
-.banner.menu .menuitem input, .banner.menu .menuicon input {
+.banner.menu .menuItem input, .banner.menu .menuIcon input {
   vertical-align: bottom;
 }
 
@@ -298,27 +298,27 @@ footer .menu {
   font-size: 14px;
 }
 /* line 179, ../../tests/sass/screen.scss */
-footer .menu .footermenu, footer .menu .textmenu, footer .menu .menuleft, footer .menu .menuright, footer .menu .logocont {
+footer .menu .footerMenu, footer .menu .textMenu, footer .menu .menuLeft, footer .menu .menuRight, footer .menu .logoContainer {
   display: inline-block;
 }
 /* line 184, ../../tests/sass/screen.scss */
-footer .menu .textmenu a, footer .menu .menuleft a, footer .menu .menuright a {
+footer .menu .textMenu a, footer .menu .menuLeft a, footer .menu .menuRight a {
   padding-top: 17px;
   padding-bottom: 17px;
   display: block;
 }
 /* line 190, ../../tests/sass/screen.scss */
-footer .menu .menuleft {
+footer .menu .menuLeft {
   width: 45%;
 }
 /* line 194, ../../tests/sass/screen.scss */
-footer .menu .logocont {
+footer .menu .logoContainer {
   padding-top: 12px;
   padding-bottom: 12px;
   width: 5%;
 }
 /* line 200, ../../tests/sass/screen.scss */
-footer .menu .menuright {
+footer .menu .menuRight {
   width: 45%;
 }
 
@@ -347,7 +347,7 @@ footer .menu .menuright {
   margin: 9px 0;
 }
 /* line 226, ../../tests/sass/screen.scss */
-.legend li .asidecircle {
+.legend li .asideCircle {
   width: 18px;
   height: 18px;
   -webkit-border-radius: 9px;
@@ -357,13 +357,13 @@ footer .menu .menuright {
   margin-right: 9px;
 }
 /* line 231, ../../tests/sass/screen.scss */
-.legend li .asidetext {
+.legend li .asideText {
   display: inline-block;
   vertical-align: top;
 }
 
 /* line 238, ../../tests/sass/screen.scss */
-.questionlistitem {
+.questionListItem {
   border-color: #f0f0f0;
   border-width: 3px;
   border-style: solid;
@@ -371,45 +371,45 @@ footer .menu .menuright {
   margin-bottom: 8px;
 }
 /* line 240, ../../tests/sass/screen.scss */
-.questionlistitem.outdated {
+.questionListItem.outdated {
   border-color: #f28374;
 }
 /* line 243, ../../tests/sass/screen.scss */
-.questionlistitem.edited {
+.questionListItem.edited {
   border-color: #ffde64;
 }
 /* line 246, ../../tests/sass/screen.scss */
-.questionlistitem.new {
+.questionListItem.new {
   border-color: #8ad19d;
 }
 /* line 253, ../../tests/sass/screen.scss */
-.questionlistitem .indent {
+.questionListItem .indent {
   text-align: center;
   width: 60px;
 }
 /* line 258, ../../tests/sass/screen.scss */
-.questionlistitem .questionanswer > *, .questionlistitem .question > *, .questionlistitem .answersnippet > * {
+.questionListItem .questionAnswer > *, .questionListItem .question > *, .questionListItem .answerSnippet > * {
   display: inline-block;
   height: 100%;
   vertical-align: top;
   padding-top: 8px;
 }
 /* line 265, ../../tests/sass/screen.scss */
-.questionlistitem .question {
+.questionListItem .question {
   height: 45%;
 }
 /* line 268, ../../tests/sass/screen.scss */
-.questionlistitem .question .questiontext {
+.questionListItem .question .questiontext {
   font-size: 18px;
   font-weight: 700;
   width: calc(100% - 60px);
 }
 /* line 274, ../../tests/sass/screen.scss */
-.questionlistitem .answersnippet {
+.questionListItem .answerSnippet {
   height: 55%;
 }
 /* line 277, ../../tests/sass/screen.scss */
-.questionlistitem .answersnippet .version {
+.questionListItem .answerSnippet .version {
   width: 60px;
   height: 20px;
   background-color: #80adbd;
@@ -421,7 +421,7 @@ footer .menu .menuright {
   font-weight: 700;
 }
 /* line 288, ../../tests/sass/screen.scss */
-.questionlistitem .answersnippet .answertext {
+.questionListItem .answerSnippet .answerText {
   float: right;
   display: inline-block;
   width: calc(100% - 60px - 60px - 20px);
@@ -459,7 +459,7 @@ footer .menu .menuright {
   position: relative;
 }
 /* line 320, ../../tests/sass/screen.scss */
-.qa .answer .answerbox .editbutton {
+.qa .answer .answerbox .editButton {
   position: absolute;
   right: 0;
   top: 0;
@@ -469,13 +469,13 @@ footer .menu .menuright {
   display: none;
 }
 /* line 328, ../../tests/sass/screen.scss */
-.qa .answer .answerbox .editbox {
+.qa .answer .answerbox .editBox {
   width: calc(100% - (4 * 24px));
   display: inline-block;
 }
 
 /* line 336, ../../tests/sass/screen.scss */
-.favoritebuttons {
+.favoriteButtons {
   float: left;
   width: 24px;
   padding-left: 5px;

@@ -10,7 +10,7 @@ $main-title-font-size: 24px;
 /////////////
 /* COLOURS */
 /////////////
-$colorscheme: (red: #f28374, yellow: #ffde64, green: #8ad19d, blue: #80adbd, light-grey: #f0f0f0, dark-grey: #333333, white: #ffffff);
+$color-scheme: (red: #f28374, yellow: #ffde64, green: #8ad19d, blue: #80adbd, light-grey: #f0f0f0, dark-grey: #333333, white: #ffffff);
 
 /////////////////
 /* BREAKPOINTS */
@@ -24,29 +24,29 @@ $break-hires: 1366px;
 ////////////////
 /* DIMENSIONS */
 ////////////////
-$iconsize: 24px;
+$icon-size: 24px;
 $banner-height: 48px;
-$topmargin: 30px;
-$bottommargin: 30px;
-$questionheight: 100px;
-$questiongap: 8px;
-$asidecirclesize: 18px;
-$questionquestionheight: 45%;
-$questionanswerheight: 100% - $questionquestionheight;
-$indentwidth: 60px;
-$versionwidth: 60px;
-$versionheight: 20px;
-$versionpadding: 20px;
-$questioninnerpadding: 8px;
+$top-margin: 30px;
+$bottom-margin: 30px;
+$question-height: 100px;
+$question-gap: 8px;
+$aside-circle-size: 18px;
+$question-question-height: 45%;
+$question-answer-height: 100% - $question-question-height;
+$indent-width: 60px;
+$version-width: 60px;
+$version-height: 20px;
+$version-padding: 20px;
+$question-inner-padding: 8px;
 
-$qapadding: 35px;
-$qaquestionpaddingtop: $qapadding - $topmargin;
-$qaquestionpaddingleft: $qaquestionpaddingtop;
-$qaanswerpaddingleft: $qaquestionpaddingleft + 12px;
-$qaanswerlineheight: 18px;
-$qaeditorwidth: ($iconsize * 3) + $qaquestionpaddingleft;
+$qa-padding: 35px;
+$qa-question-padding-top: $qa-padding - $top-margin;
+$qa-question-padding-left: $qa-question-padding-top;
+$qa-answer-padding-left: $qa-question-padding-left + 12px;
+$qa-answer-line-height: 18px;
+$qa-editor-width: ($icon-size * 3) + $qa-question-padding-left;
 
 ///////////////////
 /* MISCELLANEOUS */
 ///////////////////
-$linestodisplay: 2;
+$lines-to-display: 2;

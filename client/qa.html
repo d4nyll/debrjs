@@ -1,38 +1,38 @@
 <template name="qa">
 	<div class="main qa">
 		<div class="question">
-			{{> favoritebuttons}}
-			<h2>#{{qid}}: {{questiontext}}</h2>
+			{{> favoriteButtons}}
+			<h2>#{{qid}}: {{question}}</h2>
 		</div>
 		<div class="answer">
-			{{> favoritebuttons}}
+			{{> favoriteButtons}}
 			<div class="answerbox">
-				{{> Template.dynamic template=answeredit}}
+				{{> Template.dynamic template=answerEdit data=this}}
 			</div>
 		</div>
 	</div>
 </template>
 
 <template name="answer">
-	<div class="answertext">
+	<div class="answerText">
 		{{#markdown}}
-{{answertext}}
+{{answerText}}
 		{{/markdown}}
 	</div>
-	<div class="editbutton">
+	<div class="editButton">
 		<a href="edit/">
-			<div class="edit actionbuttons"></div>
+			<div class="edit actionButtons"></div>
 		</a>
 	</div>
 </template>
 
 <template name="edit">
-	<div class="editbox">
-		{{>epic answertext focusOnLoad=true}}
+	<div class="editBox">
+		{{>epic answerText}}
 	</div>
-	<div class="editbutton">
+	<div class="editButton">
 		<a href="../">
-			<div class="save actionbuttons"></div>
+			<div class="save actionButtons"></div>
 		</a>
 	</div>
 </template>

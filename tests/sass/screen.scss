@@ -49,7 +49,7 @@
     }
 }
 
-@each $color, $hex in $colorscheme {
+@each $color, $hex in $color-scheme {
     .#{"" + $color} {
         @include set-color($hex);
     }
@@ -79,8 +79,8 @@ body {
     font-family: $default-font;
     font-size: $default-font-size;
     text-align: center;
-    background-color: map-get($colorscheme, white);
-    color: map-get($colorscheme, dark-grey);
+    background-color: map-get($color-scheme, white);
+    color: map-get($color-scheme, dark-grey);
 }
 
 body > * {
@@ -89,71 +89,71 @@ body > * {
 
 a {
     text-decoration: none;
-    color: map-get($colorscheme, dark-grey);
+    color: map-get($color-scheme, dark-grey);
 }
 
 code {
 	font-family: $code-font;
 }
-.iconbuttons {
-	width: $iconsize;
-	height: $iconsize;
+.iconButtons {
+	width: $icon-size;
+	height: $icon-size;
 	display: inline-block;
 }
-.actionbuttons {
-    @extend .iconbuttons;
+.actionButtons {
+    @extend .iconButtons;
     cursor: pointer;
 }
 .menu {
     width: 100%;
     height: $banner-height;
     text-align: center;
-    background-color: map-get($colorscheme, light-grey);
-    .menuitem {
-        padding-left: $iconsize / 2;
-        padding-right: $iconsize / 2;
+    background-color: map-get($color-scheme, light-grey);
+    .menuItem {
+        padding-left: $icon-size / 2;
+        padding-right: $icon-size / 2;
         display: inline-block;
     }
-    .menuicon {
-        @extend .menuitem;
-        height: $iconsize;
-        width: $iconsize;
+    .menuIcon {
+        @extend .menuItem;
+        height: $icon-size;
+        width: $icon-size;
         display: inline-block;
     }
 }
 
-.menuleft {
+.menuLeft {
     text-align: left;
     float: left;
 }
 
-.menuright {
+.menuRight {
     text-align: right;
     float: right;
 }
 
 .banner.menu {
     font-size: 0;
-    .halfmenu {
+    .halfMenu {
         display: inline-block;
         width: 50%;
     }
-    .menuleft {
+    .menuLeft {
         display: inline-block;
         width: 60%;
     }
-    .menuright {
+    .menuRight {
         display: inline-block;
         width: 40%;
-        #bannersearch {
+        #bannerSearch {
             width: $banner-height * 3.75;
             height: $banner-height / 2;
             border: none;
             margin-right: 24px;
         }
     }
-    .menuitem {
-        height: $iconsize;
+    .menuItem {
+        height: $icon-size;
         padding-top: $banner-height / 4;
         padding-bottom: $banner-height / 4;
         input {
@@ -163,9 +163,9 @@ code {
 }
 
 .centerer.body {
-    margin-top: $topmargin;
-    margin-bottom: $bottommargin;
-    padding-left: $iconsize / 2;
+    margin-top: $top-margin;
+    margin-bottom: $bottom-margin;
+    padding-left: $icon-size / 2;
 }
 
 footer {
@@ -176,29 +176,29 @@ footer {
     width: 100%;
     .menu {
         font-size: $default-font-size;
-        .footermenu {
+        .footerMenu {
             display: inline-block;
         }
-        .textmenu {
-            @extend .footermenu;
+        .textMenu {
+            @extend .footerMenu;
             a {
                 padding-top: ($banner-height - $default-font-size) / 2;
                 padding-bottom: ($banner-height - $default-font-size) / 2;
                 display: block;
             }
         }
-        .menuleft {
-            @extend .textmenu;
+        .menuLeft {
+            @extend .textMenu;
             width: 45%;
         }
-        .logocont {
-            @extend .footermenu;
+        .logoContainer {
+            @extend .footerMenu;
             padding-top: $banner-height / 4;
             padding-bottom: $banner-height / 4;
             width: 5%;
         }
-        .menuright {
-            @extend .textmenu;
+        .menuRight {
+            @extend .textMenu;
             width: 45%;
         }
     }
@@ -218,78 +218,78 @@ footer {
 }
 
 .legend {
-    padding-left: $asidecirclesize;
-    padding-top: $questionheight / 2;
+    padding-left: $aside-circle-size;
+    padding-top: $question-height / 2;
     li {
-        line-height: $asidecirclesize;
-        margin: $asidecirclesize / 2 0;
-        .asidecircle {
-            @include circle($asidecirclesize);
+        line-height: $aside-circle-size;
+        margin: $aside-circle-size / 2 0;
+        .asideCircle {
+            @include circle($aside-circle-size);
             display: inline-block;
-            margin-right: $asidecirclesize / 2;
+            margin-right: $aside-circle-size / 2;
         }
-        .asidetext {
+        .asideText {
             display: inline-block;
             vertical-align: top;
         }
     }
 }
 
-.questionlistitem {
-    border-color: map-get($colorscheme, light-grey);
+.questionListItem {
+    border-color: map-get($color-scheme, light-grey);
     &.outdated {
-        border-color: map-get($colorscheme, red);
+        border-color: map-get($color-scheme, red);
     }
     &.edited {
-        border-color: map-get($colorscheme, yellow);
+        border-color: map-get($color-scheme, yellow);
     }
     &.new {
-        border-color: map-get($colorscheme, green);
+        border-color: map-get($color-scheme, green);
     }
     border-width: 3px;
     border-style: solid;
-    height: $questionheight - $questiongap;
-    margin-bottom: $questiongap;
+    height: $question-height - $question-gap;
+    margin-bottom: $question-gap;
     .indent {
         text-align: center;
-        width: $indentwidth;
+        width: $indent-width;
     }
-    .questionanswer {
+    .questionAnswer {
         & > * {
             display: inline-block;
             height: 100%;
             vertical-align: top;
-            padding-top: $questioninnerpadding;
+            padding-top: $question-inner-padding;
         }
     }
     .question {
-        @extend .questionanswer;
-        height: $questionquestionheight;
+        @extend .questionAnswer;
+        height: $question-question-height;
         .questiontext {
             font-size: $list-title-font-size;
             font-weight: 700;
-            width: calc(100% - #{$indentwidth});
+            width: calc(100% - #{$indent-width});
         }
     }
-    .answersnippet {
-        @extend .questionanswer;
-        height: $questionanswerheight;
+    .answerSnippet {
+        @extend .questionAnswer;
+        height: $question-answer-height;
         .version {
-        	width: $versionwidth;
-        	height: $versionheight;
-        	background-color: map-get($colorscheme, blue);
+        	width: $version-width;
+        	height: $version-height;
+        	background-color: map-get($color-scheme, blue);
         	padding: 0;
-        	margin-top: $questioninnerpadding;
+        	margin-top: $question-inner-padding;
         	text-align: center;
-        	line-height: $versionheight;
-        	color: map-get($colorscheme, light-grey);
+        	line-height: $version-height;
+        	color: map-get($color-scheme, light-grey);
         	font-weight: 700;
         }
-        .answertext {
+        .answerText {
         	float: right;
             display: inline-block;
-            width: calc(100% - #{$indentwidth} - #{$versionwidth} - #{$versionpadding});
-            max-height: $default-font-size * $linestodisplay;
+            width: calc(100% - #{$indent-width} - #{$version-width} - #{$version-padding});
+            max-height: $default-font-size * $lines-to-display;
             overflow: hidden;
         }
     }
@@ -297,11 +297,11 @@ footer {
 
 .qa {
     & > * {
-        padding: $qapadding;
+        padding: $qa-padding;
     }
     .question {
-        padding-top: $qaquestionpaddingtop;
-        padding-left: $qaquestionpaddingleft;
+        padding-top: $qa-question-padding-top;
+        padding-left: $qa-question-padding-left;
         h2 {
             font-size: $main-title-font-size;
             font-weight: 700;
@@ -309,15 +309,15 @@ footer {
     }
     .answer {
         padding-top: 0;
-        line-height: $qaanswerlineheight;
-        padding-left: $qaanswerpaddingleft;
+        line-height: $qa-answer-line-height;
+        padding-left: $qa-answer-padding-left;
         li {
             list-style: disc;
             list-style-position: inside;
         }
         .answerbox {
             position: relative;
-            .editbutton {
+            .editButton {
                 position: absolute;
                 right: 0;
                 top: 0;
@@ -325,17 +325,17 @@ footer {
             #epictext {
                 display: none;
             }
-            .editbox {
-                width: calc(100% - (4 * #{$iconsize}));
+            .editBox {
+                width: calc(100% - (4 * #{$icon-size}));
                 display: inline-block;
             }
         }
     }
 }
 
-.favoritebuttons {
+.favoriteButtons {
     float: left;
-    width: $iconsize;
-    padding-left: $qaquestionpaddingleft;
-    padding-right: $iconsize;
+    width: $icon-size;
+    padding-left: $qa-question-padding-left;
+    padding-right: $icon-size;
 }

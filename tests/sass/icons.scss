@@ -1,46 +1,46 @@
 @import "settings";
 
-@mixin iconbutton($name) {
+@mixin iconButton($name) {
     &.#{$name} {
 		background-image: url("/img/#{$name}.png");
 	}
 }
 
-@mixin actionbutton($name) {
-    @include iconbutton($name);
+@mixin actionButton($name) {
+    @include iconButton($name);
 	&.#{$name}:hover {
 		background-image: url("/img/#{$name}_filled.png");
 	}
 }
 
-.iconbuttons {
+.iconButtons {
 	background-size: cover;
-	@include iconbutton('answer');
-	@include iconbutton('ask');
-	@include iconbutton('bookmark');
-	@include iconbutton('chat');
-	@include iconbutton('edit');
-	@include iconbutton('like');
-	@include iconbutton('logo');
-	@include iconbutton('mail');
-	@include iconbutton('save');
-	@include iconbutton('search');
-	@include iconbutton('settings');
-	@include iconbutton('user');
+	@include iconButton('answer');
+	@include iconButton('ask');
+	@include iconButton('bookmark');
+	@include iconButton('chat');
+	@include iconButton('edit');
+	@include iconButton('like');
+	@include iconButton('logo');
+	@include iconButton('mail');
+	@include iconButton('save');
+	@include iconButton('search');
+	@include iconButton('settings');
+	@include iconButton('user');
 }
 
-.actionbuttons {
+.actionButtons {
 	background-size: cover;
-	@include actionbutton('answer');
-	@include actionbutton('ask');
-	@include actionbutton('bookmark');
-	@include actionbutton('chat');
-	@include actionbutton('edit');
-	@include actionbutton('like');
-	@include actionbutton('logo');
-	@include actionbutton('mail');
-	@include actionbutton('save');
-	@include actionbutton('search');
-	@include actionbutton('settings');
-	@include actionbutton('user');
+	@include actionButton('answer');
+	@include actionButton('ask');
+	@include actionButton('bookmark');
+	@include actionButton('chat');
+	@include actionButton('edit');
+	@include actionButton('like');
+	@include actionButton('logo');
+	@include actionButton('mail');
+	@include actionButton('save');
+	@include actionButton('search');
+	@include actionButton('settings');
+	@include actionButton('user');
 }
