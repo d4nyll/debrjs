@@ -1,0 +1,6 @@
+db.counters.insert(
+	{
+		_id: "qid",
+		seq: 0
+	}
+)
