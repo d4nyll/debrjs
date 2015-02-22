@@ -298,11 +298,11 @@ footer .menu {
   font-size: 14px;
 }
 /* line 179, ../../tests/sass/screen.scss */
-footer .menu .footerMenu, footer .menu .textMenu, footer .menu .menuLeft, footer .menu .menuRight, footer .menu .logoContainer {
+footer .menu .menuLeft, footer .menu .menuRight, footer .menu .logoContainer {
   display: inline-block;
 }
 /* line 184, ../../tests/sass/screen.scss */
-footer .menu .textMenu a, footer .menu .menuLeft a, footer .menu .menuRight a {
+footer .menu .menuLeft a, footer .menu .menuRight a {
   padding-top: 17px;
   padding-bottom: 17px;
   display: block;
@@ -388,7 +388,7 @@ footer .menu .menuRight {
   width: 60px;
 }
 /* line 258, ../../tests/sass/screen.scss */
-.questionListItem .questionAnswer > *, .questionListItem .question > *, .questionListItem .answerSnippet > * {
+.questionListItem .question > *, .questionListItem .answerSnippet > * {
   display: inline-block;
   height: 100%;
   vertical-align: top;

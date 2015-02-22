@@ -176,11 +176,11 @@ footer {
     width: 100%;
     .menu {
         font-size: $default-font-size;
-        .footerMenu {
+        %footerMenu {
             display: inline-block;
         }
-        .textMenu {
-            @extend .footerMenu;
+        %textMenu {
+            @extend %footerMenu;
             a {
                 padding-top: ($banner-height - $default-font-size) / 2;
                 padding-bottom: ($banner-height - $default-font-size) / 2;
@@ -188,17 +188,17 @@ footer {
             }
         }
         .menuLeft {
-            @extend .textMenu;
+            @extend %textMenu;
             width: 45%;
         }
         .logoContainer {
-            @extend .footerMenu;
+            @extend %footerMenu;
             padding-top: $banner-height / 4;
             padding-bottom: $banner-height / 4;
             width: 5%;
         }
         .menuRight {
-            @extend .textMenu;
+            @extend %textMenu;
             width: 45%;
         }
     }
@@ -254,7 +254,7 @@ footer {
         text-align: center;
         width: $indent-width;
     }
-    .questionAnswer {
+    %questionAnswer {
         & > * {
             display: inline-block;
             height: 100%;
@@ -263,7 +263,7 @@ footer {
         }
     }
     .question {
-        @extend .questionAnswer;
+        @extend %questionAnswer;
         height: $question-question-height;
         .questiontext {
             font-size: $list-title-font-size;
@@ -272,7 +272,7 @@ footer {
         }
     }
     .answerSnippet {
-        @extend .questionAnswer;
+        @extend %questionAnswer;
         height: $question-answer-height;
         .version {
         	width: $version-width;
