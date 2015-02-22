@@ -8,6 +8,11 @@ Router.route('/', function () {
 	this.render('aside', {to: 'aside'});
 });
 
+Router.route('/ask', function () {
+	this.render('ask');
+	this.render('related', {to: 'aside'});
+});
+
 Router.route('/error/:_id', function () {
 	this.render('error', {
   		data: function() {
@@ -21,13 +26,21 @@ Router.route('/qa/', function () {
 });
 
 Router.route('/qa/:_qid', function () {
-	this.render('qa');
+	this.render('qa', {
+		data: function () {
+			return {qid: this.params._qid};
+		}
+	});
 	this.render('related', {to: 'aside'});
 	Session.set('editMode', false);
 });
 
-Router.route('/qa/:_id/edit/', function () {
-	this.render('qa');
+Router.route('/qa/:_qid/edit/', function () {
+	this.render('qa', {
+		data: function () {
+			return {qid: this.params._qid};
+		}
+	});
 	this.render('related', {to: 'aside'});
 	Session.set('editMode', true);
 });
